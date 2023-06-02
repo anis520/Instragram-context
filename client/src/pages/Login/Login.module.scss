@@ -1,0 +1,191 @@
+$primary-color:#1e8ff8; 
+$hover-color:#299EF7; 
+
+ .container{
+     width: 100%;
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+    
+    .login_wraper{
+         background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 4px;
+        margin-top: 50px;
+        width: 350px;
+        border: 1px solid rgba(167, 170, 173, 0.432);
+        padding: 20px;
+   
+        .logo{
+             display: flex;justify-content: center;
+            img{
+                
+                width: 60%;
+            }
+        }
+
+        .form{
+            margin-top: 20px;
+            width: 100%;
+            display: flex;
+             flex-direction: column;
+             align-items: center;
+              
+
+             input{
+                border: 1px solid rgba(89, 89, 92, 0.171);
+                width:90%;
+                height: 38px;
+                border-radius: 4px;
+                padding: 10px;
+                background-color: rgba(132, 132, 139, 0.075);
+                margin-bottom: 10px;
+                font-size: 13px;
+             }
+             button{
+                width: 90%;
+                height: 32px;
+                padding: 5px;
+                border-radius: 4px;
+                margin-bottom: 10px;
+                background-color: $primary-color;
+                color: white;
+                font-weight: bold;
+                 border: none;
+                 transition: .2s;
+                 
+
+                 &:hover{
+                    background-color: $hover-color;
+                 }
+            }
+            .dam{
+                opacity: 50%;
+            }
+        }
+        .divider{
+            margin: 10px 0 20px;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 14px;
+            color: grey;
+            position: relative;
+            width: 100%;
+            text-align: center;
+            &::before{
+                content: '';
+                display: block;
+                clear: both;
+                position: absolute;
+                 top: 9px;
+                 left: 18px;
+                height: 1px;
+                width: 38%;
+                background-color: rgba(128, 128, 128, 0.548);
+            }
+            &::after{
+                content: '';
+                display: block;
+                clear: both;
+                position: absolute;
+                top: 9px;
+                right:  18px;
+                height: 1px;
+                width: 40%;
+                background-color: rgba(128, 128, 128, 0.548);
+            }
+        }
+        .login_fb{
+            color:#385185;
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+  
+        .forgot_pass{
+            font-size: 12px;
+            font-weight: bold; 
+            color: #545a66;
+            margin-top: 20px;
+        }
+   
+    }
+
+    .sign_up{
+        background-color: white;
+          text-align: center;
+        border-radius: 4px;
+        font-size: 13px;
+        margin-top: 10px;
+        width: 350px;
+        border: 1px solid rgba(167, 170, 173, 0.432);
+        padding: 20px;
+
+        span{
+            font-weight: 500;
+          a{
+            color: $primary-color;
+            font-weight: bold;
+          }
+        }
+
+   
+    }
+
+    .app{
+        width: 350px;
+        padding: 10px;
+      span{
+        text-align: center;
+        display: block;
+          font-size: 13px;
+          font-weight: bold;
+          margin-bottom: 10px;
+      }
+
+      .img{
+        display: flex;
+        gap: 10px;
+        
+        justify-content: center;
+            
+        img{
+            // object-fit: cover;
+            width: 48%;
+        }
+
+
+      }
+
+
+
+
+    }
+
+    .footer{
+        margin-top: 30px;
+        p{
+            font-weight: 400;
+            font-size: 12px;
+            color: rgb(105, 99, 99);
+            word-spacing: 10px;
+        
+        }
+        .text2{
+    font-weight: 400;
+            font-size: 12px;
+            color: rgb(105, 99, 99);
+            word-spacing: 0px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+    }
+
+
+
+ }

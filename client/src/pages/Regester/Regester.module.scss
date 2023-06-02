@@ -1,0 +1,80 @@
+$primary-color:#1e8ff8; 
+
+ .container{
+    padding-top: 250px;
+ }
+.fb_text{
+    font-weight: 700;
+    font-size: 16px;
+    color: gray;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.login_fb{
+    background-color:$primary-color;
+    color: white;
+    width: 90%;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 10px 0;
+    text-align: center;
+    padding: 5px;
+    .icon{
+        font-size: 21px;
+     }
+    &:hover{
+        background-color:$primary-color;
+        color: white;
+    }
+    
+}
+
+
+.divider{
+    margin: 10px 0 0;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    color: grey;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    &::before{
+        content: '';
+        display: block;
+        clear: both;
+        position: absolute;
+         top: 9px;
+         left: 18px;
+        height: 1px;
+        width: 38%;
+        background-color: rgba(128, 128, 128, 0.548);
+    }
+    &::after{
+        content: '';
+        display: block;
+        clear: both;
+        position: absolute;
+        top: 9px;
+        right:  18px;
+        height: 1px;
+        width: 40%;
+        background-color: rgba(128, 128, 128, 0.548);
+    }
+}
+
+
+.text{
+    width:90%;
+    margin: 10px auto;
+    font-size: 12px;
+    text-align: center;
+    color: rgb(75, 72, 72);
+
+
+    span{
+        font-weight: bold;
+    }
+}
